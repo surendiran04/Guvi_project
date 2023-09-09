@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <style>
+        a{
+            color: goldenrod;
+        }
+        a:visited{
+            color:green;
+        }
+        a:hover{
+            color:blueviolet;
+            font-size: 2rem;
+            border:2px solid rgb(255, 196, 196);
+        }
+        .square{
+           width:100px;
+           height:100px;
+           background-color:aquamarine;
+           margin:20px 20px 10px 10px;
+        }
+        .square:hover{
+           background-color: brown;   
+           border-radius: 50%;
+        }
+        td,th{
+            padding:10px;
+            text-align:center;
+        }
+        #example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+#example3 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px red;
+}
+.dd{
+    box-shadow: 15px -19px 18px 0px rgba(0,0,0,0.1);
+}
+.but:hover{
+    background-color: bisque;
+}
+.but:focus{
+    background-color: darkgreen;
+}
+.conatiner{
+    position:relative;
+    width:100%;
+    height:200vh;
+    background-color:palevioletred;
+    display: flex;
+    flex-direction:row;
+    align-items:baseline;
+    justify-content: center;
+}
+.p-square{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background-color: chartreuse;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.sticky{
+    position: sticky;
+}
+.p-square2{
+    position:sticky;
+    width:100%;
+    height:100px;
+    background-color: rgb(102, 0, 255);
+    top:10px;  
+}
+.p-square3{
+    width:100px;
+    height:100px;
+    background-color: rgb(102, 0, 255);
+    display:inline-block;
+}
+.bubble{
+    position:fixed;
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: yellowgreen;
+    bottom:20px;
+    right:20px;
+}
+    </style>
+</head>
+<body>
+    <!--<script src="arraymethod.js"></script>
+    
+
+    <p id="example1">CSS properties</p>
+     <h3>Unordered list</h3>
+    <ul>
+        <li>programming languages</li>
+        <ul style="list-style-type:circle;">
+            <li>javascript</li>
+            <ul style="list-style-type:lower-alpha">
+                <li>angular</li>
+                <li>React</li>
+                <li>Vue.js</li>
+            </ul>
+            <li>python</li>
+            <ul style="list-style-type:lower-alpha">
+                <li>Django framework</li>
+                <li>Flash framework</li>
+            </ul>
+            <li>java</li>
+            <ul style="list-style-type:lower-alpha">
+                <li>spring</li>
+                <li>Maven</li>
+                <li>Hibernate</li>
+            </ul>
+        </ul>
+        <li>Database</li>
+        <ul style="list-style-type:circle ;">
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Cansandra</li>
+        </ul>
+    </ul>
+    <h3>Ordered list</h3>
+    <ol>
+        <li>Milk</li>
+        <li>sugar</li>
+        <li>Pista</li>
+    </ol>
+
+
+    <h3>table</h3>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th rowspan="2"> state of health</th>
+                <th colspan="2">Fasting value</th>
+                <th>after eating</th>
+                <tr>
+                    <th>Maximum</th>
+                    <th>Minimum</th>
+                    <th>2 hrs after eating</th>
+                </tr>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140-200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>more than 126</td>
+                <td>N/A</td>
+                <td>more than 200</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <box-icon name='qr-scan'></box-icon>
+    <i class='bx bx-qr-scan'></i>
+
+   <p class="dd">hi hello!</p>
+   <a href="https://www.zenclass.in/class">zen class</a>
+   <div class="square"></div>
+   <button class="but">click</button>-->
+      <div class="conatiner">
+    <div class="p-square"></div>
+   <!-- <div class="p-square sticky"></div>-->
+    <div class="bubble"></div>
+   <!--- <div class="p-square2"></div>-->
+    <div class="conatiner">
+    <div class="p-square3">af</div>
+    <div class="p-square3">af</div>
+    <div class="p-square3">af</div>
+   </div>
+</body>
+</html>
